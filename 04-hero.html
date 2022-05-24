@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lakeside Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            line-height: 1;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            height: 100vh;
+            position: relative;
+            /* display: flex;
+            flex-direction: column; */
+            background-image: linear-gradient( rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(hero.jpg);
+            background-size: cover;
+            margin-bottom: 64px;
+        }
+        
+        nav {
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: rgba(68, 68, 68, 0.4);
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 32px;
+            position: fixed;
+            left: 220px;
+        }
+        
+        h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 32px;
+            padding-top: 48px;
+            margin-top: 64px;
+        }
+        
+        .header-content {
+            width: 800px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .state {
+            position: absolute;
+            top: 50%;
+        }
+        
+        h2 {
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 1.01;
+            letter-spacing: -2px;
+            margin-bottom: 32px;
+        }
+        
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+        
+        a:link,
+        a:visited {
+            text-decoration: none;
+            background-color: #e67e22;
+            color: #fff;
+            font-weight: 500;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 8px;
+        }
+        
+        .header-part-one {
+            width: 50%;
+            text-align: left;
+        }
+        
+        .part-two {
+            color: #444;
+            height: 100vh;
+        }
+        /* .nav-one {
+            margin-left: 200px;
+        }
+        
+        .nav-two {
+            margin-right: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-one">lakeside logo</div>
+            <div class="nav-two">navigation</div>
+        </nav>
+        <section class="header-content">
+            <div class="header-part-one">
+                <h1>healthy, fresh meals to satisfy your hunger.</h1>
+                <p>
+                    Nutritonal meals absolutely tailored to your personal needs.Healthy and delicious meals.
+                </p>
+                <a href="#">start eating well</a>
+            </div>
+            <div class="header-part-two"></div>
+        </section>
+    </header>
+    <section class="container part-two">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga quo libero corporis ad commodi!
+        </p>
+    </section>
+</body>
+
+</html>

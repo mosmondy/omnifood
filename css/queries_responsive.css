@@ -1,0 +1,304 @@
+/*
+    ?SPACING SYSTEM (px)
+    ?2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    !FONT SIZE SYSTEM (px)
+    !10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
+
+@media (max-width: 84em) {
+    .hero-container {
+        max-width: 120rem;
+    }
+    .primary-heading {
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 82em) {
+    .gallery-image {
+        height: 100%;
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+    .grid {
+        column-gap: 4.8rem;
+    }
+    .main-nav {
+        gap: 2rem;
+    }
+    .primary-heading {
+        font-size: 4rem;
+    }
+    .secondary-heading {
+        font-size: 3.6rem;
+    }
+    .tertiary-heading {
+        font-size: 2.4rem;
+    }
+    .hero-container {
+        column-gap: 4.8rem;
+    }
+}
+
+@media (max-width: 60em) {
+    html {
+        font-size: 50%;
+    }
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .header-image {
+        width: 75%;
+        margin: 8rem auto;
+    }
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .hero-description {
+        margin-bottom: 4.8rem;
+    }
+    .hero-section {
+        padding: 0 4.8rem 4.8rem;
+    }
+    .logos img {
+        height: 2.4rem;
+    }
+    .meals-container {
+        padding: 9.6rem 0;
+        column-gap: 3rem;
+    }
+    .testimonial-box {
+        grid-template-columns: 1fr;
+    }
+    .gallery-section {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .plan-one {
+        width: 90%;
+    }
+    .plan-one.two-plan {
+        width: 90%;
+    }
+    .diet-list {
+        line-height: 0.4;
+    }
+    .cta-grid {
+        grid-template-columns: 60% 40%;
+    }
+    .cta-content {
+        padding: 2.4rem 4.8rem;
+    }
+    .content-text {
+        margin-top: 2.6rem;
+        margin-bottom: 2.6rem;
+    }
+    .content-form {
+        margin-top: 1.8rem;
+        row-gap: 2.6rem;
+        grid-template-columns: 1fr;
+    }
+    .btn-mobile-nav {
+        font-display: block;
+        z-index: 9999;
+    }
+    .navigation {
+        background-color: rgba(255, 255, 255, 60%);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 1s ease-in;
+        transform: translateX(100%);
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .main-nav {
+        flex-direction: column;
+        gap: 4.8rem;
+        /* pointer-events: none; */
+        /* visibility: hidden; */
+    }
+    .main-nav a:link,
+    .main-nav a:visited {
+        font-size: 3rem;
+    }
+    .icon-mobile-nav[name='menu'] {
+        display: block;
+    }
+    .nav-open .navigation {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .icon-mobile-nav[name='menu'] {
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name='menu'] {
+        display: none;
+    }
+    .nav-open .icon-mobile-nav[name='close'] {
+        display: block;
+        /* margin-right: 1rem; */
+        z-index: 9999;
+    }
+    .grid-4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .meals-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 6.4rem;
+        column-gap: 4.8rem;
+    }
+    .two {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+    .secondary-heading {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .plan-one {
+        width: 100%;
+    }
+    .plan-one.two-plan {
+        width: 100%;
+    }
+    .diet-item {
+        gap: 0.8rem;
+    }
+    .grid-5-cols {
+        grid-template-columns: repeat(6, 1fr);
+        row-gap: 4.8rem;
+    }
+    .account,
+    .company {
+        grid-column: span 2;
+    }
+    .logo-box,
+    .contact {
+        grid-column: span 3;
+        grid-row: 2/3;
+        margin-top: 3.2rem;
+    }
+    .content-form {
+        display: block;
+        margin-bottom: 2.6rem;
+    }
+    .form-item {
+        margin-bottom: 2rem;
+        display: block;
+    }
+    .btn.btn-cta.btn-main {
+        display: block;
+        margin-bottom: 2.6rem;
+    }
+    .cta-content {
+        padding: 0 3.6rem;
+    }
+}
+
+@media (max-width: 34em) {
+    .logos img {
+        height: 1.4rem;
+    }
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+    }
+    .step-box-pseudo {
+        grid-row: 1;
+    }
+    .grid {
+        row-gap: 4.6rem;
+    }
+    .grid:not(:last-child) {
+        margin-bottom: 12.8rem;
+    }
+    .meals-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .gallery-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .plan-one {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .plan-one.two-plan {
+        width: 100%;
+    }
+    .secondary-heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .secondary-heading.price-head {
+        margin-bottom: 8rem;
+    }
+    .btn--primary {
+        margin-bottom: 3rem;
+    }
+    .primary-heading {
+        font-size: 3.2rem;
+    }
+    .secondary-heading {
+        font-size: 2.6rem;
+    }
+    .box-two-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-image {
+        width: 90%;
+    }
+    .step-box {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .grid-5-cols {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 4.8rem;
+    }
+    .account,
+    .company {
+        grid-column: span 3;
+    }
+    .logo-box,
+    .contact {
+        grid-column: span 3;
+        grid-row: 3/4;
+        margin-top: 3.2rem;
+    }
+    .logo-box img {
+        width: 100%;
+    }
+    .grid-4-cols {
+        grid-template-columns: 1fr;
+    }
+    .cta-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .cta-image {
+        height: 32rem;
+        grid-row: 1;
+        display: block;
+    }
+    .cta-content {
+        margin-top: 3.2rem;
+    }
+}

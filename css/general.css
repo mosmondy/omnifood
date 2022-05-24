@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    overflow-x: hidden;
+}
+
+
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    FONT WEIGHT
+        ---Default: 400
+
+    LINE-HEIGHT
+        ---Default: 1
+        ---headers: 1.1
+        ---text:1.6
+
+    COLORS
+        ---Primary: #e67e22
+        #fcc419
+        
+        #94d82d
+
+        40c057
+
+                #7f7f7f; 
+        ---Tints: #fdf2e9, #fae5d3
+        ---Shades:#cf711f
+        ---Greys:
+                 #555
+
+        ---Accents:
+
+    SHADOWS
+
+    BORDER-RADIUS
+        ---8rem
+
+    WHITESPACE
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ 
+    */
+
+
+/* !create re-usable container */
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4rem rgba(69, 38, 10, 0.5);
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    /* row-gap: 9.6rem; */
+    /* margin-bottom: 8rem; */
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+    grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+}
+
+.step-align {
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1.8rem;
+    gap: 4.8rem;
+    font-weight: 500;
+}
+
+
+/* !STICKY NAV */
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 5%);
+}
+
+.sticky .hero-section {
+    margin-top: 9.6rem;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.main-nav a:active,
+.main-nav a:hover {
+    color: #cf711f;
+}
+
+.main-nav li a.nav-btn:link,
+.main-nav li a.nav-btn:visited {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+}
+
+.main-nav li a.nav-btn:active,
+.main-nav li a.nav-btn:hover {
+    background-color: #cf711f;
+}
+
+.hero-section {
+    background-color: #fdf2e9;
+    padding: 0 4.8rem 9.6rem;
+}
+
+.hero-container {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* height: 100vh; */
+    column-gap: 6.4rem;
+    /* margin-left: 4.8rem;
+    margin-right: 4.8rem; */
+}
+
+.header-image {
+    width: 100%;
+    /* height: 100%; */
+}
+
+header .logo {
+    /* margin-left: 3.2rem; */
+}
+
+.primary-heading {
+    font-size: 5.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.075rem;
+    margin-bottom: 3.2rem;
+    color: #444;
+}
+
+.secondary-heading {
+    color: #444;
+    line-height: 1.1;
+    letter-spacing: -0.075rem;
+    font-size: 4.4rem;
+}
+
+.tertiary-heading {
+    color: #444;
+    line-height: 1.1;
+    letter-spacing: -0.075rem;
+    font-size: 3.6rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 6.4rem;
+}
+
+.btn,
+.btn:link,
+.btn:hover {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.8rem;
+    transition: all, 0.3s;
+    display: inline-block;
+}
+
+.btn--primary {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn--secondary {
+    background-color: #fff;
+    color: #444;
+}
+
+.btn--primary:active,
+.btn--primary:hover {
+    background-color: #cf711f;
+}
+
+.btn--secondary:active,
+.btn--secondary:hover {
+    background-color: #fdf2e9;
+    box-shadow: 0 0 0 0.3rem #fff;
+}
+
+.margin-right {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bt-md {
+    margin-bottom: 3.2rem;
+}
+
+.margin-bt-lg {
+    margin-bottom: 8rem;
+}
+
+.margin-top {
+    margin-top: 4.8rem;
+}
+
+strong {
+    font-size: 600;
+}
+
+.center-text {
+    text-align: center;
+}
